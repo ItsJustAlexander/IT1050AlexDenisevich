@@ -58,7 +58,7 @@ namespace LabW8_AlexDenisevich
                 Console.WriteLine("Enter the time in military time");
                 militaryTime = Convert.ToInt32(Console.ReadLine());
 
-                if (militaryTime < 11)
+                if (militaryTime <= 11)
                 {
                     Console.WriteLine("Good Morning");
                 }
