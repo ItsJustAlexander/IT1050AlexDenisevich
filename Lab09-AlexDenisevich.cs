@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab09_AlexDenisevich
 {
-    class MyMath
+    class MyMath //this is the class
     {
         public double a;
         public double b;
@@ -61,3 +61,44 @@ namespace Lab09_AlexDenisevich
         }
     }
 }
+//this is the program code
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab09_AlexDenisevich
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double op1;
+            double op2;
+
+            Console.Write("Enter operand1 amount: ");
+            op1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter operand2 amount: ");
+            op2 = Convert.ToDouble(Console.ReadLine());
+
+            var myResult = new MyMath(op1, op2);
+
+            myResult.Multiply();
+            myResult.GetResult();
+
+            myResult.Divide();
+            myResult.GetResult();
+
+            myResult.Subtract();
+            myResult.GetResult();
+
+            myResult.Add();
+            myResult.GetResult();
+
+            
+            
+        }
+    }
+}
+
